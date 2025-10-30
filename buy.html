@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- 🔹 Top Contact Bar -->
+    <div class="topbar">
+      <div class="container topbar-content">
+        <div class="contact-info">
+          <a href="tel:+971 50 151 4563" title="Call Us"
+            ><i class="fa-solid fa-phone"></i> +971 50 151 4563
+          </a>
+          <a href="#" href="tel:+971 02 883 6477" title="Call Us"
+            >+971 02 883 6477</a
+          >
+          <a href="mailto:sania@siriuspropertiesllc.com" title="Email Us"
+            ><i class="fa-solid fa-envelope"></i>
+            sania@siriuspropertiesllc.com</a
+          >
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" class="instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="linkedin"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="tiktok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header / Navbar -->
+    <header class="navbar-header">
+      <div class="container header-inner">
+        <a href="index.html">
+          <h1 class="logo">Sirius <span>Properties LLC</span></h1>
+        </a>
+
+        <nav class="navbar" id="navbar">
+          <ul>
+            <li><a href="buy.html" class="active">BUY</a></li>
+            <li><a href="sale.html">SALE</a></li>
+            <li><a href="rent.html">RENT</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="properties.html">PROPERTIES</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <header class="page-head">
+        <div>
+          <h1>Properties for Sale</h1>
+          <p>Click a card to preview details or open the listing page.</p>
+        </div>
+        <div>
+          <!-- optional filter or button -->
+          <a
+            href="#"
+            style="
+              font-size: 0.95rem;
+              color: var(--muted);
+              text-decoration: none;
+            "
+            >Sort: Newest</a
+          >
+        </div>
+      </header>
+
+      <section class="grid" id="properties-grid">
+        <!-- Example card (repeat for as many properties as you have) -->
+        <a
+          class="card-link"
+          href="property.html?id=1"
+          data-id="1"
+          data-title="Modern Family Villa"
+          data-price="PKR 3.5 Crore"
+          data-location="Gulberg, Lahore"
+          data-image="assets/images.jpg"
+          data-desc="Beautiful 4-bedroom family villa in a quiet neighborhood."
+        >
+          <img
+            class="card-media"
+            src="assets/main.jpg"
+            alt="Modern Family Villa"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Modern Family Villa</h3>
+            <div class="card-sub">Gulberg, Lahore</div>
+
+            <div class="card-meta">
+              <div class="meta-left">
+                <span
+                  ><i class="fa-solid fa-bed" aria-hidden="true"></i> 4</span
+                >
+                <span
+                  ><i class="fa-solid fa-bath" aria-hidden="true"></i> 3</span
+                >
+                <span class="badge">For Buy</span>
+              </div>
+              <div class="price">PKR 3.5 Cr</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- card 2 -->
+        <a
+          class="card-link"
+          href="property.html?id=2"
+          data-id="2"
+          data-title="Luxury Apartment"
+          data-price="PKR 85 Lakh"
+          data-location="DHA Phase 5"
+          data-image="assets/hero-section.jpg"
+          data-desc="2-bedroom sea-facing apartment with amenities."
+        >
+          <img
+            class="card-media"
+            src="assets/hero-section.jpg"
+            alt="Luxury Apartment"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Luxury Apartment</h3>
+            <div class="card-sub">DHA Phase 5</div>
+
+            <div class="card-meta">
+              <div class="meta-left">
+                <span
+                  ><i class="fa-solid fa-bed" aria-hidden="true"></i> 2</span
+                >
+                <span
+                  ><i class="fa-solid fa-bath" aria-hidden="true"></i> 2</span
+                >
+                <span class="badge">For Buy</span>
+              </div>
+              <div class="price">PKR 85 Lakh</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- card 3 -->
+        <a
+          class="card-link"
+          href="property.html?id=3"
+          data-id="3"
+          data-title="Corner Plot"
+          data-price="PKR 1.2 Crore"
+          data-location="Block A - New City"
+          data-image="assets/home.png"
+          data-desc="Large corner plot ideal for a family home."
+        >
+          <img class="card-media" src="assets/main.jpg" alt="Corner Plot" />
+          <div class="card-body">
+            <h3 class="card-title">Corner Plot</h3>
+            <div class="card-sub">New City</div>
+
+            <div class="card-meta">
+              <div class="meta-left">
+                <span
+                  ><i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>
+                  500 sq yd</span
+                >
+                <span class="badge">For Buy</span>
+              </div>
+              <div class="price">PKR 1.2 Cr</div>
+            </div>
+          </div>
+        </a>
+      </section>
+    </div>
+
+    <!-- Modal preview (hidden by default) -->
+    <div
+      id="modal-back"
+      class="modal-backdrop"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="modal" role="document">
+        <div class="modal-header">
+          <strong id="modal-title">Title</strong>
+          <button id="modal-close" class="modal-close" aria-label="Close">
+            ✕
+          </button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <img id="modal-image" src="" alt="" />
+          </div>
+          <div>
+            <p
+              id="modal-location"
+              style="color: var(--muted); margin-top: 0"
+            ></p>
+            <h3 id="modal-price" style="margin-top: 6px"></h3>
+            <p id="modal-desc" style="margin-top: 12px; color: #333"></p>
+            <div style="margin-top: 14px">
+              <a
+                id="modal-link"
+                class="btn"
+                href="#"
+                style="
+                  text-decoration: none;
+                  display: inline-block;
+                  padding: 9px 14px;
+                  background: var(--accent);
+                  color: #fff;
+                  border-radius: 8px;
+                "
+                >View Full Listing</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

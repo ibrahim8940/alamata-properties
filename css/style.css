@@ -1,4 +1,6 @@
-/* 🌐 Modern Default CSS – 2025 Starter Template */
+/* Modern Default CSS – 2025 Starter Template */
+
+@import url("sale.css");
 
 /* CSS Reset (modern minimal reset) */
 *,
@@ -232,7 +234,7 @@ button,
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background-image: url("../assets/images.jpg");
+  background-image: url("../assets/main.jpg");
   background-repeat: no-repeat;
   background-size: cover; /* ✅ add this */
   background-position: center; /* ✅ add this */
