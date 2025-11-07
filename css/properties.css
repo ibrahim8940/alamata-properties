@@ -1,0 +1,86 @@
+.properties-section {
+  padding: 60px 10%;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  color: #222;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background: #0078ff;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+.properties-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.property-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.property-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.property-info {
+  padding: 20px;
+}
+
+.property-info h3 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.property-info .location {
+  color: #777;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.property-info .price {
+  color: #0078ff;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.btn {
+  background: #0078ff;
+  width: 40%;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #005fcc;
+}
