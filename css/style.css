@@ -304,11 +304,47 @@ button,
 
 /* feature section */
 
+.feature {
+  background-image: url(../assets/main.jpg);
+}
+
 .feature-section {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 30px;
 }
+
+/* Scroll Animation Initial State */
+.scroll-anim {
+  opacity: 0;
+  transition: transform 5s ease, opacity 5s ease;
+  transform-style: preserve-3d;
+  transform: perspective(800px);
+}
+
+/* Directions */
+.scroll-anim.left {
+  transform: translateX(-120px) rotateY(10deg);
+}
+.scroll-anim.right {
+  transform: translateX(120px) rotateY(-10deg);
+}
+.scroll-anim.top {
+  transform: translateY(-120px) rotateX(10deg);
+}
+
+/* When element appears in viewport */
+.scroll-anim.show {
+  opacity: 1;
+  transform: perspective(800px) rotateX(0) rotateY(0) translateX(0)
+    translateY(0);
+}
+
+/* Optional Hover 3D Effect */
+.card:hover {
+  transform: perspective(800px) rotateY(5deg) rotateX(3deg);
+}
+
 .hero-text h1 {
   margin-bottom: 30px;
 }

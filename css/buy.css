@@ -1,3 +1,11 @@
+.page-head {
+  margin-top: 20px;
+}
+
+.buy-section {
+  display: flex;
+  justify-content: space-between;
+}
 /* ------------------------------
    PROPERTY GRID & CARDS
 ------------------------------ */
