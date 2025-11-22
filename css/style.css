@@ -238,6 +238,15 @@ button,
   overflow: hidden;
 }
 
+.carousel,
+.slide,
+.slide img {
+  left: 0 !important;
+  right: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 /* Carousel container */
 .carousel {
   position: absolute;
@@ -271,7 +280,7 @@ button,
   object-fit: cover;
 }
 
-/* Overlay text */
+/* Text */
 .title {
   position: relative;
   z-index: 2;
@@ -283,7 +292,7 @@ button,
   transform: translateY(-50%);
 }
 
-/* Animation for fading and switching */
+/* Animation */
 @keyframes slideShow {
   0% {
     opacity: 0;
@@ -299,6 +308,47 @@ button,
   }
   100% {
     opacity: 0;
+  }
+}
+
+/* --------------------------------------------------
+   📱 Mobile Screens (Vivo, Samsung, Infinix)
+-------------------------------------------------- */
+@media (max-width: 480px) {
+  .hero {
+    height: 80vh; /* reduce height so content is visible */
+  }
+
+  .title {
+    font-size: 1.8rem; /* smaller text for mobiles */
+    top: 55%; /* move text down */
+  }
+
+  .slide img {
+    object-fit: cover; /* keep same style */
+    filter: brightness(80%); /* make text readable */
+  }
+}
+
+/* --------------------------------------------------
+   📱 Medium Mobiles
+-------------------------------------------------- */
+@media (min-width: 481px) and (max-width: 767px) {
+  .hero {
+    height: 85vh;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+}
+
+/* --------------------------------------------------
+   💻 Tablet & Desktop
+-------------------------------------------------- */
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.2rem;
   }
 }
 
